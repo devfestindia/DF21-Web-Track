@@ -5,167 +5,202 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GDG's BookStore</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
-    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 </head>
-<body>
 
+<body>
+    
+<!-- Header Content -->
 <header class="header">
-    <div class="header-1">
-        <a href="#" class="logo"> <i class="fas fa-book"></i> GDG's BookStore </a>
+        <h1> GDG's BookStore </h1>
         <div class="icons">
-            <div href="#" class="checkout-btn fas fa-shopping-cart"></div>
-            <div id="login-btn" class="fas fa-user"></div>
+            <button class="checkout-btn btn">Checkout</button>
+            <button id="login-btn" class="btn">Login</button>
         </div>
-    </div>
     <div class="header-2">
     </div>
 </header>
 
-
+<!-- Login Form Content -->
 <div class="login-form-container">
-    <div id="close-login-btn" class="fas fa-times"></div>
+    <button id="close-login-btn" class="btn">close</button>
     <form action="">
         <h3>sign in</h3>
-        <span>username</span>
+        <span>Username</span>
         <input type="email" name="" class="box" placeholder="enter your email" id="">
-        <span>password</span>
+        <span>Password</span>
         <input type="password" name="" class="box" placeholder="enter your password" id="">
         <div class="checkbox">
             <input type="checkbox" name="" id="remember-me">
             <label for="remember-me"> remember me</label>
         </div>
         <input type="submit" value="sign in" class="btn">
-        <p>forget password ? <a href="#">click here</a></p>
-        <p>don't have an account ? <a href="#">create one</a></p>
     </form>
 </div>
 
+<!-- Checkout Form Content -->
 <div class="checkout-form-container">
-    <div id="close-checkout-btn" class="fas fa-times"></div>
+    <button id="close-checkout-btn" class="btn">close</button>
     <div class="checkout-section">
-        <h3 style="font-size: 30px;">Review Order</h3>
-            <div style="font-size: 20px;" class="shopping-cart">
+        <h3>Review Order</h3>
+            <div class="shopping-cart">
               <div class="item header">
                 <div class="name"></div>
                 <div class="price"><strong>Price</strong></div>
-                <div class="quantity" style="margin-left: 20px;"><strong>Quantity</strong></div>
+                <div class="quantity"><strong>Quantity</strong></div>
               </div>
               <div class="item">
                 <div class="name">Item 1</div>
                 <div class="price">$1.99</div>
-                <div class="quantity" style="margin-left: 20px;">2x</div>
+                <div class="quantity">2x</div>
               </div>
               <div class="item">
                 <div class="name">Item 2</div>
                 <div class="price">$2.99</div>
-                <div class="quantity" style="margin-left: 20px;">3x</div>
+                <div class="quantity">3x</div>
               </div>
               <div class="item">
                 <div class="name">Item 3</div>
                 <div class="price">$5.99</div>
-                <div class="quantity" style="margin-left: 20px;">2x</div>
+                <div class="quantity">2x</div>
               </div>
               <div class="item summary">
                 <div class="name"></div>
                 <div class="price"><strong>Discount:</strong></div>
-                <div class="quantity" style="margin-left: 20px;"><strong>0%</strong></div>
+                <div class="quantity"><strong>0%</strong></div>
               </div>
               <div class="item summary">
                 <div class="name"></div>
                 <div class="price"><strong>Sum:</strong></div>
-                <div class="quantity" style="margin-left: 20px;"><strong>$93.94</strong></div>
+                <div class="quantity"><strong>$93.94</strong></div>
               </div>
             </div>
     </div>  
 </div>
 
+<!-- List of Books Content -->
+<div class="container">
+<div class="row">
+<div class="card">
+    <img src="image/book-1.png" class="card-img-top">
+    <div class="card-body">
+      <h2 class="card-title">The Art City</h2>
+      <div class="price card-text">$15.99</div>
+       <a href="#" class="btn">add to cart</a>
+    </div>
+</div>
 
-<section class="home" id="home">
-    <div class="row">
-        <div class="content">
-            <h3>Find Best Books Online</h3>
+<div class="card">
+    <img src="image/book-2.png" class="card-img-top" >
+    <div class="card-body">
+      <h2 class="card-title">Thanks in Everything</h2>
+      <div class="price card-text">$15.99</div>
+       <a href="#" class="btn">add to cart</a>
+    </div>
+</div>
+
+
+<div class="card">
+    <img src="image/book-3.png" class="card-img-top">
+    <div class="card-body">
+      <h2 class="card-title">Diary</h2>
+      <div class="price card-text">$15.99</div>
+       <a href="#" class="btn">add to cart</a>
+    </div>
+</div>
+</div>
+
+<div class="row">
+    <div class="card">
+        <img src="image/book-4.png" class="card-img-top">
+        <div class="card-body">
+        <h2 class="card-title">Personal Diary</h2>
+        <div class="price card-text">$15.99</div>
+        <a href="#" class="btn">add to cart</a>
         </div>
     </div>
-</section>
-
-<section class="featured" id="featured">
-    <div class="swiper featured-slider">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide box">
-                <div class="image">
-                    <img src="image/book-1.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>Wuthering Heights</h3>
-                    <div class="price">$15.99 <span>$20.99</span></div>
-                    <a href="#" class="btn">add to cart</a>
-                </div>
-            </div>
-            <div class="swiper-slide box">
-                <div class="image">
-                    <img src="image/book-2.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>Becoming</h3>
-                    <div class="price">$15.99 <span>$20.99</span></div>
-                    <a href="#" class="btn">add to cart</a>
-                </div>
-            </div>
-            <div class="swiper-slide box">
-                <div class="image">
-                    <img src="image/book-3.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>Unfinished</h3>
-                    <div class="price">$15.99 <span>$20.99</span></div>
-                    <a href="#" class="btn">add to cart</a>
-                </div>
-            </div>
-            <div class="swiper-slide box">
-                <div class="image">
-                    <img src="image/book-4.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>Last Song</h3>
-                    <div class="price">$15.99 <span>$20.99</span></div>
-                    <a href="#" class="btn">add to cart</a>
-                </div>
-            </div>
-            <div class="swiper-slide box">
-                <div class="image">
-                    <img src="image/book-5.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>Secret</h3>
-                    <div class="price">$15.99 <span>$20.99</span></div>
-                    <a href="#" class="btn">add to cart</a>
-                </div>
-            </div>
+    <div class="card">
+        <img src="image/book-5.png" class="card-img-top">
+        <div class="card-body">
+          <h2 class="card-title">Music Note</h2>
+          <div class="price card-text">$15.99</div>
+           <a href="#" class="btn">add to cart</a>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
     </div>
-</section>
+    <div class="card">
+        <img src="image/book-6.png" class="card-img-top">
+        <div class="card-body">
+          <h2 class="card-title">Notebook</h2>
+          <div class="price card-text">$15.99</div>
+           <a href="#" class="btn">add to cart</a>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="card">
+        <img src="image/book-7.png" class="card-img-top">
+        <div class="card-body">
+        <h2 class="card-title">Wuthering Heights</h2>
+        <div class="price card-text">$15.99</div>
+        <a href="#" class="btn">add to cart</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="image/book-8.png" class="card-img-top">
+        <div class="card-body">
+        <h2 class="card-title">Black History Month</h2>
+        <div class="price card-text">$15.99</div>
+        <a href="#" class="btn">add to cart</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="image/book-9.png" class="card-img-top">
+        <div class="card-body">
+        <h2 class="card-title">Love</h2>
+        <div class="price card-text">$15.99</div>
+        <a href="#" class="btn">add to cart</a>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="card">
+        <img src="image/book-4.png" class="card-img-top">
+        <div class="card-body">
+        <h2 class="card-title">Gift Book</h2>
+        <div class="price card-text">$15.99</div>
+        <a href="#" class="btn">add to cart</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="image/book-5.png" class="card-img-top">
+        <div class="card-body">
+        <h2 class="card-title">Grateful</h2>
+        <div class="price card-text">$15.99</div>
+        <a href="#" class="btn">add to cart</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="image/book-1.png" class="card-img-top">
+        <div class="card-body">
+        <h2 class="card-title">Wuthering Heights</h2>
+        <div class="price card-text">$15.99</div>
+        <a href="#" class="btn">add to cart</a>
+        </div>
+    </div>
+</div>
+
+</div>
 
 
-<!-- footer section starts  -->
-
+<!-- Footer Content -->
 <section class="footer">
-    <div class="share">
-        <a href="#" class="fab fa-facebook-f"></a>
-        <a href="#" class="fab fa-twitter"></a>
-        <a href="#" class="fab fa-instagram"></a>
-        <a href="#" class="fab fa-linkedin"></a>
-        <a href="#" class="fab fa-pinterest"></a>
-    </div>
+    <div> All rights reserved @GDG </div>
 </section>
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <script src="js/script.js"></script>
 
