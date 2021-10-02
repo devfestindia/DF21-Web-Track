@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDG's BookStore</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+<!-- Header Content -->
+<header class="header">
+        <h1> GDG's BookStore </h1>
+        <div class="icons">
+            <button class="checkout-btn btn">Checkout</button>
+            <button id="login-btn" class="btn">Login</button>
+        </div>
+    <div class="header-2">
+    </div>
+</header>
+
+<!-- Login Form Content -->
+<div class="login-form-container">
+    <button id="close-login-btn" class="btn">close</button>
+    <form action="">
+        <h3>sign in</h3>
+        <span>Username</span>
+        <input type="email" name="" class="box" placeholder="enter your email" id="">
+        <span>Password</span>
+        <input type="password" name="" class="box" placeholder="enter your password" id="">
+        <div class="checkbox">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me"> remember me</label>
+        </div>
+        <input type="submit" value="sign in" class="btn">
+    </form>
+</div>
+
+<!-- Checkout Form Content -->
+<div class="checkout-form-container">
+    <button id="close-checkout-btn" class="btn">close</button>
+    <div class="checkout-section">
+        <h3>Review Order</h3>
+            <div class="shopping-cart">
+              <div class="item header">
+                <div class="name"></div>
+                <div class="price"><strong>Price</strong></div>
+                <div class="quantity"><strong>Quantity</strong></div>
+              </div>
+              <div class="item">
+                <div class="name">Item 1</div>
+                <div class="price">$1.99</div>
+                <div class="quantity">2x</div>
+              </div>
+              <div class="item">
+                <div class="name">Item 2</div>
+                <div class="price">$2.99</div>
+                <div class="quantity">3x</div>
+              </div>
+              <div class="item">
+                <div class="name">Item 3</div>
+                <div class="price">$5.99</div>
+                <div class="quantity">2x</div>
+              </div>
+              <div class="item summary">
+                <div class="name"></div>
+                <div class="price"><strong>Discount:</strong></div>
+                <div class="quantity"><strong>0%</strong></div>
+              </div>
+              <div class="item summary">
+                <div class="name"></div>
+                <div class="price"><strong>Sum:</strong></div>
+                <div class="quantity"><strong>$93.94</strong></div>
+              </div>
+            </div>
+    </div>  
+</div>
+
+<!-- List of Books Content -->
+<div class="container">
+<div class="row">
+<div class="card">
+    <img src="image/book-1.png" class="card-img-top">
+    <div class="card-body">
+      <h2 class="card-title">The Art City</h2>
+      <div class="price card-text">$15.99</div>
+       <a href="#" class="btn">add to cart</a>
+    </div>
+</div>
+
+<div class="card">
+    <img src="image/book-2.png" class="card-img-top" >
+    <div class="card-body">
+      <h2 class="card-title">Thanks in Everything</h2>
+      <div class="price card-text">$15.99</div>
+       <a href="#" class="btn">add to cart</a>
+    </div>
+</div>
+
+
+<div class="card">
+    <img src="image/book-3.png" class="card-img-top">
+    <div class="card-body">
+      <h2 class="card-title">Diary</h2>
+      <div class="price card-text">$15.99</div>
+       <a href="#" class="btn">add to cart</a>
+    </div>
+</div>
+</div>
+
+<div class="row">
+    <div class="card">
+        <img src="image/book-4.png" class="card-img-top">
+        <div class="card-body">
+        <h2 class="card-title">Personal Diary</h2>
+        <div class="price card-text">$15.99</div>
+        <a href="#" class="btn">add to cart</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="image/book-5.png" class="card-img-top">
+        <div class="card-body">
+          <h2 class="card-title">Music Note</h2>
+          <div class="price card-text">$15.99</div>
+           <a href="#" class="btn">add to cart</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="image/book-6.png" class="card-img-top">
+        <div class="card-body">
+          <h2 class="card-title">Notebook</h2>
+          <div class="price card-text">$15.99</div>
+           <a href="#" class="btn">add to cart</a>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="card">
+        <img src="image/book-7.png" class="card-img-top">
+        <div class="card-body">
+        <h2 class="card-title">Wuthering Heights</h2>
+        <div class="price card-text">$15.99</div>
+        <a href="#" class="btn">add to cart</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="image/book-8.png" class="card-img-top">
+        <div class="card-body">
+        <h2 class="card-title">Black History Month</h2>
+        <div class="price card-text">$15.99</div>
+        <a href="#" class="btn">add to cart</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="image/book-9.png" class="card-img-top">
+        <div class="card-body">
+        <h2 class="card-title">Love</h2>
+        <div class="price card-text">$15.99</div>
+        <a href="#" class="btn">add to cart</a>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="card">
+        <img src="image/book-4.png" class="card-img-top">
+        <div class="card-body">
+        <h2 class="card-title">Gift Book</h2>
+        <div class="price card-text">$15.99</div>
+        <a href="#" class="btn">add to cart</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="image/book-5.png" class="card-img-top">
+        <div class="card-body">
+        <h2 class="card-title">Grateful</h2>
+        <div class="price card-text">$15.99</div>
+        <a href="#" class="btn">add to cart</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="image/book-1.png" class="card-img-top">
+        <div class="card-body">
+        <h2 class="card-title">Wuthering Heights</h2>
+        <div class="price card-text">$15.99</div>
+        <a href="#" class="btn">add to cart</a>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+<!-- Footer Content -->
+<section class="footer">
+    <div> All rights reserved @GDG </div>
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
