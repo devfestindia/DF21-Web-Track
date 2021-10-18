@@ -1,0 +1,188 @@
+html {
+  font-size: 60%;
+  overflow-x: hidden;
+  scroll-padding-top: 5rem;
+  scroll-behavior: smooth;
+}
+
+header {
+  margin-bottom: 2rem;
+  position: relative;
+  margin-left: 70px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+header h1 {
+  font-size: 30px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 2rem !important;
+  border-radius: 1rem;
+  color: #fff;
+  background: #189ab4;
+  font-size: 1.5rem !important;
+  cursor: pointer;
+  font-weight: 600 !important;
+  margin-right: 10px;
+}
+
+.card {
+  width: 30rem;
+  text-align: center;
+  font-size: 20px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.login-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  top: 0;
+  right: -105%;
+  z-index: 10000;
+  height: 100%;
+  width: 100%;
+}
+
+.icons {
+  float: right;
+  margin-top: -40px;
+  margin-right: 50px;
+  display: inline-block;
+}
+
+.checkout-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  top: 0;
+  right: -105%;
+  z-index: 10000;
+  height: 100%;
+  width: 100%;
+  line-height: 5rem;
+}
+
+.login-form-container.active {
+  right: 0;
+}
+.checkout-form-container.active {
+  right: 0;
+}
+
+.login-form-container form {
+  width: 40rem;
+}
+
+.login-form-container form h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--black);
+  text-align: center;
+}
+
+.login-form-container form span {
+  display: block;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+.login-form-container form .box {
+  width: 100%;
+  margin: 0.7rem 0;
+  font-size: 1.6rem;
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  padding: 1rem 1.2rem;
+  color: var(--black);
+  text-transform: none;
+}
+
+.login-form-container form .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+
+.login-form-container form .checkbox label {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  cursor: pointer;
+}
+
+.login-form-container form .btn {
+  text-align: center;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.login-form-container #close-login-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 2.5rem;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.checkout-form-container #close-checkout-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 2.5rem;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+.footer {
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 15px;
+  margin-right: 100px;
+}
+
+.checkout-section {
+  display: flex;
+  width: 100vw;
+  max-width: 700px;
+  flex-wrap: wrap;
+  background: var(--color-bg-light);
+  text-align: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  padding: 0;
+  margin: var(--space-2) 0;
+}
+
+.checkout-section h3 {
+  font-size: 30px;
+  margin-top: 7px;
+}
+
+.shopping-cart .item {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.shopping-cart .name {
+  width: 60%;
+}
+.shopping-cart .price,
+.shopping-cart .quantity {
+  display: block;
+  text-align: right;
+  min-width: 72px;
+  margin-left: 20px;
+}
