@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GDG's BookStore</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="xr/aframe.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Header Content -->
+  <header class="header">
+    <h1> GDG's BookStore </h1>
+    <div class="icons">
+      <button class="checkout-btn btn">Checkout</button>
+      <button id="signin-btn" class="btn">Sign In</button>
+      <button id="signout-btn" class="btn">Sign Out</button>
+    </div>
+  </header>
+
+  <!-- Checkout Form Content -->
+  <div class="checkout-form-container">
+    <button id="close-checkout-btn" class="btn">close</button>
+    <div class="checkout-section">
+      <h3>Review Order</h3>
+      <div class="shopping-cart">
+        <div class="item header">
+          <div class="name"></div>
+          <div class="price"><strong>Price</strong></div>
+          <div class="quantity"><strong>Quantity</strong></div>
+        </div>
+        <div class="item">
+          <div class="name">Item 1</div>
+          <div class="price">$1.00</div>
+          <div class="quantity">2</div>
+        </div>
+        <div class="item">
+          <div class="name">Item 2</div>
+          <div class="price">$2.00</div>
+          <div class="quantity">3</div>
+        </div>
+        <div class="item">
+          <div class="name">Item 3</div>
+          <div class="price">$5.00</div>
+          <div class="quantity">2</div>
+        </div>
+        <div class="item summary">
+          <div class="name"></div>
+          <div class="price"><strong>Tax:</strong></div>
+          <div class="quantity"><strong>1.00</strong></div>
+        </div>
+        <div class="item summary">
+          <div class="name"></div>
+          <div class="price"><strong>Total:</strong></div>
+          <div class="quantity"><strong>$19.00</strong></div>
+        </div>
+      </div>
+      <div class="w-100">
+        <hr>
+      </div>
+      <div id="payment-button-container"></div>
+    </div>
+  </div>
+
+  <!-- List of Books Content -->
+  <div class="container">
+    <div class="row" id="book-row">
+    </div>
+  </div>
+
+  <!-- Virtual room container -->
+  <div id="vrRoomContainer">
+    <a-scene>
+      <a-plane position="0 0 0" rotation="-90 0 0" width="6" height="10" color="#7BC8A4"></a-plane>
+      <a-box src="image/book-1.png" position="0 2 -5" rotation="0 45 45" scale="2 2 2"></a-box>
+      <a-box src="image/book-2.png" position="5 2 0" rotation="0 45 45" scale="2 2 2"></a-box>
+      <a-box src="image/book-3.png" position="-5 2 0" rotation="0 45 45" scale="2 2 2"></a-box>
+    </a-scene>
+  </div>
+  <button class="btn chat-open-button" onclick="openForm()">Chat</button>
+  <button id="openVR" class="btn virtual-store-button" onclick="openVirtualRoom()">Virtual Book Store</button>
+  <button id="closeVR" class="btn virtual-store-button" onclick="closeVirtualRoom()">Exit</button>
+  <button id="webCam" class="btn webCam-button" onclick="openWebCam()">Start Web Cam</button>
+
+  <!-- Chatbot popup -->
+
+  <div class="chat-popup" id="chatForm">
+    <form action="" class="chat-form-container">
+      <h1 class="card-title">Chat</h1>
+      <div id="chatBox"></div>
+      <input type="text" name="" placeholder="Type question.." id="question" required></input>
+      <button type="button" class="btn" id="submit">Ask</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+  <div class="webcam-popup" id="webCamDisplay">
+    <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+    <button type="button" class="btn" id="predict" onclick="predictObject()">Predict</button>
+    <button type="button" class="btn cancel" onclick="closeWebCamDisplay()">Close</button>
+  </div>
+
+  <!-- Footer Content -->
+  <section class="footer">
+    <div> All rights reserved @GDG </div>
+  </section>
+
+  <script src="js/script.js"></script>
+  <script src="js/firebase/firebase.js" type="module"></script>
+  <script src="js/firebase/auth.js" type="module"></script>
+  <script src="js/firebase/firestore.js" type="module"></script>
+  <script src="js/webpayment.js"></script>
+  <script src="tfjs/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+  <script src="tfjs/chatbot.js"></script>
+  <script src="xr/room.js"></script>
+  <script src="tfjs/imageClassification.js"></script>
+  <script src="https://pay.google.com/gp/p/js/pay.js" onload="onGooglePayLoaded()"></script>
+
+</body>
+
+</html>
