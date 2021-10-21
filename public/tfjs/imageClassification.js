@@ -16,6 +16,7 @@ async function app() {
       res = result[i];
       if(res.probability > 0.5) {
         alert(res.className);
+        location.reload();
         break;
       }
     }
