@@ -22,11 +22,13 @@ In this session, you will learn how to enable web payment capabilities for our w
 
 ## Targeted audience  :family: 
 
-This repo is for those who want to kickstart their web development journey.
+This repo is for those who want to kickstart their web development journey. Also this repo is for those who have experience of web develolpment but want to go to next level with the skills like Payment integration, ML , AR & VR.
+
+
 
 ## How to use this repo? :technologist:
 
-First of all checkout DF21-Web-Track-Day3 branch in your system. Once brnach is checked out, first need to create Firebase project.
+First of all checkout main in your system. Once brnach is checked out, first need to create Firebase project.
 
 - [Go To Firebase Console](https://console.firebase.google.com/u/0/?pli=1) & click Add project.
  > - To add Firebase resources to an existing Google Cloud project, enter its project name or select it from the dropdown menu.
