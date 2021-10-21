@@ -28,7 +28,7 @@ This repo is for those who want to kickstart their web development journey. Also
 
 ## How to use this repo? :technologist:
 
-First of all checkout main in your system. Once brnach is checked out, first need to create Firebase project.
+First of all checkout main brnach in your system. Once brnach is checked out, first need to create Firebase project.
 
 - [Go To Firebase Console](https://console.firebase.google.com/u/0/?pli=1) & click Add project.
  > - To add Firebase resources to an existing Google Cloud project, enter its project name or select it from the dropdown menu.
