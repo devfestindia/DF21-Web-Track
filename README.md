@@ -18,17 +18,17 @@ In this session, you will learn what is web accessibility, what is the current s
 
 "Advancing your website with payment integration and ML/AR/VR Details"
 
-In this session, you will learn how to enable web payment capabilities for our web application with the help of Google Pay API. Addittionally, you will also learn how one can leverage the power of ML, AR / VR in eCommerce applications using TensorFlowJS and WebXR. You will also learn frequently asked interview questions.
+In this session, you will learn how to enable web payment capabilities for our web application with the help of Google Pay API. Additionally, you will also learn how one can leverage the power of ML, AR / VR in eCommerce applications using TensorFlowJS and WebXR. You will also learn frequently asked interview questions.
 
 ## Targeted audience  :family: 
 
-This repo is for those who want to kickstart their web development journey. Also this repo is for those who have experience of web develolpment but want to go to next level with the skills like Payment integration, ML , AR & VR.
+This repo is for those who want to kickstart their web development journey. Also this repo is for those who have experience of web development but want to go to next level with the skills like Payment integration, ML , AR & VR.
 
 
 
 ## How to use this repo? :technologist:
 
-First of all checkout main brnach in your system. Once brnach is checked out, first need to create Firebase project.
+First of all checkout main branch in your system. Once branch is checked out, first need to create Firebase project.
 
 - [Go To Firebase Console](https://console.firebase.google.com/u/0/?pli=1) & click Add project.
  > - To add Firebase resources to an existing Google Cloud project, enter its project name or select it from the dropdown menu.
