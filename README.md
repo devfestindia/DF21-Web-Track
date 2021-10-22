@@ -53,7 +53,7 @@ First of all checkout main branch in your system. Once branch is checked out, fi
  >    };
  >    ``` 
  > - Open public/js/firebase/firebase.js file and paste above config there.
-- Install Firebse Tools
+- Install Firebase Tools
   ``` 
   npm install -g firebase-tools 
   ```
