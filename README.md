@@ -75,4 +75,5 @@ It will give the URL http://localhost:5000/ from where you can run the applicati
 - https://developers.google.com/ar/develop/webxr
 - https://www.w3.org/TR/webxr/
 - https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API
+- https://developers.google.com/pay/api/web/overview
 
