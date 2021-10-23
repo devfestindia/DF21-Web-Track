@@ -53,4 +53,11 @@ First of all checkout DF21-Web-Track-Day1 branch in your system. Once brnach is 
   ```
 It will give the URL http://localhost:5000/ from where you can run the application. 
 
-# Resources
+# References & Learning Resources
+
+- https://www.tensorflow.org/js
+- https://js.tensorflow.org/api/latest/
+- https://www.tensorflow.org/js/tutorials
+- https://developers.google.com/ar/develop/webxr
+- https://www.w3.org/TR/webxr/
+- https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API
