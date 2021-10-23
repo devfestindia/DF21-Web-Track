@@ -76,4 +76,7 @@ It will give the URL http://localhost:5000/ from where you can run the applicati
 - https://www.w3.org/TR/webxr/
 - https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API
 - https://developers.google.com/pay/api/web/overview
+- [W3 accessibility documentation](https://www.w3.org/standards/webdesign/accessibility)
+- [WAI-ARIA Authoring Practices](https://www.w3.org/TR/wai-aria-practices-1.1/)
+- [WebAIM website for accessibility resources](https://webaim.org/)
 
