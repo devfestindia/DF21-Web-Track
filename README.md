@@ -12,52 +12,6 @@ In this session, you will learn how to enable web payment capabilities for our w
 
 This repo is for those who have experience of web develolpment but want to go to next level with the skills like Payment integration, ML , AR & VR.
 
-## How to use this repo? :technologist:
+## See Also
 
-First of all checkout DF21-Web-Track-Day3 branch in your system. Once brnach is checked out, first need to create Firebase project.
-
-- [Go To Firebase Console](https://console.firebase.google.com/u/0/?pli=1) & click Add project.
- > - To add Firebase resources to an existing Google Cloud project, enter its project name or select it from the dropdown menu.
- > - To create a new project, enter the desired project name. You can also optionally edit the project ID displayed below the project name.
- > - If prompted, review and accept the Firebase terms.
- > - Click Continue.
- > - (Optional) Set up Google Analytics for your project.
- > - Click Create project
- > - Click Continue.
- > - Click on Add Firebase to your web app 
- > - Enter App nickname
- > - Click on Register app
- > - You will get your firebaseConfig as Following
- >    ```javascript
- >    const firebaseConfig = {
- >      apiKey: "### FIREBASE API KEY ###",
- >      authDomain: "### FIREBASE AUTH DOMAIN ###",
- >      projectId: "### FIREBASE PROJECT ID ###",
- >      storageBucket: "### FIREBASE STORAGE BUCKET ###",
- >      messagingSenderId: "10728XXXXXXXXXX",
- >      appId: "1:10728XXXXXXXXXX:web:c22f0b8XXXXXXXXXXXXXX",
- >    };
- >    ``` 
- > - Open public/js/firebase/firebase.js file and paste above config there.
-- Install Firebse Tools
-  ``` 
-  npm install -g firebase-tools 
-  ```
-- Once installed, run following command and authorize it with your gmail id which you used to login to Firebase console in first step.
-  ``` 
-  firebase login
-  ```
-- Once authorized go to app code and run the following command
-  ``` 
-  firebase serve
-  ```
-It will give the URL http://localhost:5000/ from where you can run the application. 
-
-# References & Learning Resources
-
-- https://www.tensorflow.org/js
-- https://js.tensorflow.org/api/latest/
-- https://www.tensorflow.org/js/tutorials
-- https://developers.google.com/ar/develop/webxr
-- https://www.w3.org/TR/webxr/
-- https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API
+[Readme at the main branch](https://github.com/DevFest-India/DF21-Web-Track/blob/main/README.md)
