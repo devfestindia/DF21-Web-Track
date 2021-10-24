@@ -12,6 +12,6 @@ In this session, we will help you get kickstarted with web, starting from what i
 
 This repo is for those who want to kickstart their web development journey.
 
-# See Also
+## See Also
 
 [Readme at the main branch](https://github.com/DevFest-India/DF21-Web-Track/blob/main/README.md)
