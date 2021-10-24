@@ -1,6 +1,6 @@
 # DF21-Web-Track Day 3
 
-This is the repo for the Web track of Devfest India 2021. You can use this repo as your reference to check all the demos that got covered in first day of Web Track.
+This is the repo for the Web track of Devfest India 2021. You can use this repo as your reference to check all the demos that got covered in the third day of Web Track.
 
 ## Day 3 Session :microphone:
 
